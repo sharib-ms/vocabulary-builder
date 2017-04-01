@@ -11,10 +11,10 @@ class WordFrame(wx.Frame):
         panel=wx.Panel(self)
      # variable to count words
         self.count=0
-        self.vacabRus=Rus.load_dict()
-        self.vacabFin=Fin.load_dict()
-        self.vacabNep=Nep.load_dict()
-        self.vacabEng=Eng.load_dict()
+        self.vocabRus=Rus.load_dict()
+        self.vocabFin=Fin.load_dict()
+        self.vocabNep=Nep.load_dict()
+        self.vocabEng=Eng.load_dict()
 
 
 #        panel = wx.Panel(self)
@@ -51,16 +51,16 @@ class WordFrame(wx.Frame):
 
 # # # # # create a button
         # A button
-        self.buttonRus =wx.Button(panel, label=self.vacabRus[self.count], size=(360,50), pos=(80,30))
+        self.buttonRus =wx.Button(panel, label=self.vocabRus[self.count], size=(360,50), pos=(80,30))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonRus)
 
-        self.buttonFin =wx.Button(panel, label=self.vacabFin[self.count], size=(360,50), pos=(80,100))
+        self.buttonFin =wx.Button(panel, label=self.vocabFin[self.count], size=(360,50), pos=(80,100))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonFin)
 
-        self.buttonNep =wx.Button(panel, label=self.vacabNep[self.count], size=(360,50), pos=(80,170))
+        self.buttonNep =wx.Button(panel, label=self.vocabNep[self.count], size=(360,50), pos=(80,170))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonNep)
 
-        self.buttonEng =wx.Button(panel, label=self.vacabEng[self.count], size=(360,50), pos=(80,240))
+        self.buttonEng =wx.Button(panel, label=self.vocabEng[self.count], size=(360,50), pos=(80,240))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonEng)
 
 #        self.buttonDone =wx.Button(panel, label="EMPTY", size=(150,90), pos=(20,350))
@@ -88,14 +88,14 @@ class WordFrame(wx.Frame):
 
     def OnClickNext(self,e):
 #        self.count+=1
-#        if self.count>=len(self.vacab):
+#        if self.count>=len(self.vocab):
 #            self.count=0
-        self.count=random.randrange(0, len(self.vacabRus)-1, 1)
+        self.count=random.randrange(0, len(self.vocabRus)-1, 1)
 
-        self.buttonRus.SetLabel(self.vacabRus[self.count])
-        self.buttonFin.SetLabel(self.vacabFin[self.count])
-        self.buttonNep.SetLabel(self.vacabNep[self.count])
-        self.buttonEng.SetLabel(self.vacabEng[self.count])
+        self.buttonRus.SetLabel(self.vocabRus[self.count])
+        self.buttonFin.SetLabel(self.vocabFin[self.count])
+        self.buttonNep.SetLabel(self.vocabNep[self.count])
+        self.buttonEng.SetLabel(self.vocabEng[self.count])
 
     def OnClick(self,e, v):
       
@@ -117,7 +117,7 @@ class WordFrame(wx.Frame):
 class WordDictionary():
     def __init__(self, name):
         self.dict=[]
-        self.dictName='vacab/vacab'+name+'.txt'
+        self.dictName='vocab/vocab'+name+'.txt'
         self.flagName='img/flag'+name+'.jpg'
 
     def load_dict(self):
