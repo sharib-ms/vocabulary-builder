@@ -1,0 +1,82 @@
+hyvä huomenta
+hyvää päivää
+hyvää ilta
+terve
+moi/hey
+näkemiin
+Moi-moi
+hyvä matkaa
+kiitos
+ei kesta
+ei kesta
+anteeksi
+anteeksi
+
+aamiainen
+lounas
+päivällinen
+syödä
+juoda
+vesi
+kahvi
+tee
+ruokalaji
+lusikka
+haarukka
+veitsi
+kuppi
+sohva
+tuoli
+taulukko
+sänky
+ovi
+ikkuna
+pestä
+näyttää
+istua
+kävellä
+puhua
+kirjoittaa
+pelata
+ajatella
+ajaa
+juosta
+auttaa
+kytkeä
+sammuttaa
+Minä voin
+minä haluan
+sinä haluat
+minä
+sinä
+hän
+hän
+se
+me
+te
+he
+yksi
+kaksi
+kolme
+neljä
+viisi
+kuusi
+seitsemän
+kahdeksan
+yhdeksän
+kymmenen
+eilen
+tänään
+huomenna
+viikko
+päivä
+vuosi
+vaatetus
+paperi
+ruoka
+hyvä
+huonosti
+kyllä
+ei
+En ymmärrä
+Mitä kuulu? 
