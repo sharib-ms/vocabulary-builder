@@ -1,0 +1,82 @@
+good morning
+good afternoon
+good evening
+hello
+hi
+good bye
+bye
+have a nice trip
+thank you
+not at all
+you are welcome
+sorry
+excuse me
+no problem
+breakfast
+lunch
+dinner
+to eat
+to drink
+water
+coffee
+tea
+plate
+spoon
+fork
+knife
+cup
+sofa
+chair
+table
+bed
+door
+window
+wash/clean
+show
+sit
+walk/go
+speak
+write
+play
+think
+drive/go
+run
+help
+switch on
+switch off
+I can
+I want
+you want
+I
+you
+he
+she
+it
+we
+you
+they
+one
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+yesterday
+today
+tomorrow
+week
+day
+year
+clothes
+paper
+food
+good
+bad
+yes
+no
+I don't understand
+how are you?
