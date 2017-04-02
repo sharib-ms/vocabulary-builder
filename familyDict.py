@@ -4,6 +4,7 @@ import random
 import  cStringIO
 import pygame
 
+
 class WordFrame(wx.Frame):
    
     def __init__(self, parent, title, Rus, Fin, Nep, Eng):
@@ -46,7 +47,7 @@ class WordFrame(wx.Frame):
 
 
 # # # # # create  buttons
-        # A button
+        
         self.buttonRus =wx.Button(panel, label=self.vocabRus[self.count], size=(360,50), pos=(80,30))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonRus)
 
@@ -76,11 +77,11 @@ class WordFrame(wx.Frame):
     def OnAbout(self,e):
         # A message dialog box with an OK button. wx.OK is a standard ID in wxWidgets.
         dlg = wx.MessageDialog( self, "An application to learn foreign language words.", "About the program", wx.OK)
-        dlg.ShowModal() # Show it
-        dlg.Destroy() # finally destroy it when finished.
+        dlg.ShowModal() # show it
+        dlg.Destroy() #  destroy it when finished.
 
     def OnExit(self,e):
-        self.Close(True)  # Close the frame.
+        self.Close(True)  # close the frame
 
     def OnClickNext(self,e):
 #        self.count+=1
@@ -108,7 +109,7 @@ class WordFrame(wx.Frame):
     def OnClickDone(self,e):
         pass
 
-
+#class for the dictionaries
  
 class WordDictionary():
     def __init__(self, name):
@@ -129,7 +130,9 @@ class WordDictionary():
             print "Image file %s not found" % imageFile
             raise SystemExit
         return flag
- 
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 app = wx.App(False)
 
 # DICTIONARIES
@@ -145,5 +148,6 @@ wdNep.load_dict()
 wdEng=WordDictionary('Eng')
 wdEng.load_dict()
 
+# open the window with the program
 window_1=WordFrame(None, "LEARNING WORDS", wdRus , wdFin, wdNep, wdEng)
 app.MainLoop()
