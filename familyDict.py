@@ -16,32 +16,28 @@ class WordFrame(wx.Frame):
         self.vocabNep=Nep.load_dict()
         self.vocabEng=Eng.load_dict()
 
-
-#        panel = wx.Panel(self)
-#        self.quote = wx.StaticText(panel, label=label, pos=(50, 30))
-
- # # # # # # # setting a menu
+ # # # # # # # set a menu: File -> About, Exit
         self.CreateStatusBar() # A StatusBar in the bottom of the window
 
-        # Setting up the menu.
+        # set up the menu.
         filemenu= wx.Menu()
 
-        # wx.ID_ABOUT and wx.ID_EXIT are standard ids provided by wxWidgets.
+        # creat about and exit in the menu
         menuAbout = filemenu.Append(wx.ID_ABOUT, "&About"," Information about this program")
         menuExit = filemenu.Append(wx.ID_EXIT,"E&xit"," Terminate the program")
 
-        # Creating the menubar.
+        # Creat the menu bar.
         menuBar = wx.MenuBar()
-        menuBar.Append(filemenu,"&File") # Adding the "filemenu" to the MenuBar
+        menuBar.Append(filemenu,"&Menu") # Adding the "filemenu" to the MenuBar
         self.SetMenuBar(menuBar)  # Adding the MenuBar to the Frame content.
 
-        # Set events.
+        # Set events
         self.Bind(wx.EVT_MENU, self.OnAbout, menuAbout)
         self.Bind(wx.EVT_MENU, self.OnExit, menuExit)
 
-# # # # #  images 
+# # # # #  place images of the flags 
         
-        # bitmap upper left corner is in the position tuple (x, y) = (5, 5)
+        # position of the  upper left corner is in the  tuple (x, y) = (5, 5)
         wx.StaticBitmap(panel, -1, Rus.load_img(), pos=(20, 35))
         wx.StaticBitmap(panel, -1, Fin.load_img(), pos=(20, 107))
         wx.StaticBitmap(panel, -1, Nep.load_img(), pos=(20, 175))
@@ -49,7 +45,7 @@ class WordFrame(wx.Frame):
 
 
 
-# # # # # create a button
+# # # # # create  buttons
         # A button
         self.buttonRus =wx.Button(panel, label=self.vocabRus[self.count], size=(360,50), pos=(80,30))
         self.Bind(wx.EVT_BUTTON, self.OnClick,self.buttonRus)
